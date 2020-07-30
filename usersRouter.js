@@ -26,8 +26,8 @@ router.put('/', async function (req, res) {
     let firstName = req.body.firstName
     let lastName = req.body.lastName
     let email = req.body.email
-    let id = req.body.id
-    await updateUser(id,firstName,lastName,email )
+    // let id = req.body.id
+    await updateUser(firstName,lastName,email )
      res.send({ success: true })
 })
 module.exports = router

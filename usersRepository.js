@@ -2,16 +2,16 @@ var mongoose = require('mongoose');
 const fs = require('fs')
 //  настройка mongoose
 var userSchema = new mongoose.Schema({
-    firstname: String,
-        lastName: String,
-        email: String,
+    firstName: String,
+    lastName: String,
+    email: String
        
 });
 
 const User = mongoose.model('MyUser', userSchema);
 
 
-const getUsers = (search) => {
+const getUsers = () => {
         return User.find()
 }
 
