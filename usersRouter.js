@@ -16,8 +16,6 @@ router.get('/', async function (req, res) {
 
 
 router.post('/', async function (req, res) {
-  
-    console.log("req"+ req)
     let user = req.body.user
     let result = await addUser(user)
      res.send({ success: true, user })
