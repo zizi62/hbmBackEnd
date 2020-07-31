@@ -22,4 +22,4 @@ const addUser = async (user) => {
 }
 
 exports.addUser = addUser;
-exports.getUsers = getUsers;  //экспорты в ноде такие
+exports.getUsers = getUsers; 
